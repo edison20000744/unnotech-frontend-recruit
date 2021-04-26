@@ -1,4 +1,4 @@
-# 創順科技 Frontend Engineer 徵才小專案
+# Unnotech Frontend Engineer 徵才小專案
 
 這是一個小型的徵才專案，會需要你使用 Vue 和 API 所提供的資料，依照 wireframe 來完成頁面。
 
