@@ -57,12 +57,12 @@
 
 ## 我們所提供的 API
 
-### List Books [GET] `https://fe-interview-api.unnotech.com/api/book/`
+### List Books [GET] `https://fe-interview-api.unnotech.com/book/`
 
 **Request**
 
 ```bash
-curl -H "Accept: application/json" -H "Content-Type: application/json" -X GET https://fe-interview-api.unnotech.com/api/book/
+curl -H "Accept: application/json" -H "Content-Type: application/json" -X GET https://fe-interview-api.unnotech.com/book/
 ```
 
 **Response 200**
@@ -81,12 +81,12 @@ curl -H "Accept: application/json" -H "Content-Type: application/json" -X GET ht
 ]
 ```
 
-### Single Book [GET] `https://fe-interview-api.unnotech.com/api/book/:bookId/`
+### Single Book [GET] `https://fe-interview-api.unnotech.com/book/:bookId/`
 
 **Request**
 
 ```bash
-curl -H "Accept: application/json" -H "Content-Type: application/json" -X GET https://fe-interview-api.unnotech.com/api/book/1/
+curl -H "Accept: application/json" -H "Content-Type: application/json" -X GET https://fe-interview-api.unnotech.com/book/1/
 ```
 
 **Response 200**
@@ -102,12 +102,12 @@ curl -H "Accept: application/json" -H "Content-Type: application/json" -X GET ht
 }
 ```
 
-### Patch Book Detail [Patch] `https://fe-interview-api.unnotech.com/api/book/:bookId/`
+### Patch Book Detail [Patch] `https://fe-interview-api.unnotech.com/book/:bookId/`
 
 **Request**
 
 ```bash
-curl -X PATCH -H "Content-Type: application/json" -d '{"author": "Moroney"}' "https://fe-interview-api.unnotech.com/api/book/1"
+curl -X PATCH -H "Content-Type: application/json" -d '{"author": "Moroney"}' "https://fe-interview-api.unnotech.com/book/1"
 ```
 
 **Response 200**
@@ -123,12 +123,12 @@ curl -X PATCH -H "Content-Type: application/json" -d '{"author": "Moroney"}' "ht
 }
 ```
 
-### Add Book [POST] `https://fe-interview-api.unnotech.com/api/book/`
+### Add Book [POST] `https://fe-interview-api.unnotech.com/book/`
 
 **Request**
 
 ```bash
-curl -X POST --data "author=TEST&title=New Book&description=TEST" https://fe-interview-api.unnotech.com/api/book/
+curl -X POST --data "author=TEST&title=New Book&description=TEST" https://fe-interview-api.unnotech.com/book/
 ```
 
 **Response 200**
