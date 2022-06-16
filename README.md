@@ -31,9 +31,9 @@
 - "Book Card" 必須包含書名以及作者
 - "Book Card" 連結會連到單一 Book 的 "Book Detail Page"
 - 當在 "Book List Page" 時要將現在所選中的 "Book Card" 用不同的顏色或陰影標示出來，且 Header 有新增書本的按鈕可以點擊進到新增頁面。
-- 新增書籍頁面有 名稱(title)、作者(author)、備註(description) 三個欄位，名稱與作者為必填欄位，按下新增按鈕並檢核通過後即可新增書本 (API: `POST https://fe-interview-api.unnotech.com/api/book/`)
-- "Book Detail Page" 會顯示 Book 的author、title 與 description (API: `GET https://fe-interview-api.unnotech.com/api/book/:bookId/`)
-- "Book Detail Page" 右上方有一個修改按鈕，按下按鈕後，會進到修改頁面，修改頁面 有 名稱(title)、作者(author)、備註(description) 三個欄位，名稱與作者為必填欄位，按下修改按鈕並檢核通過後即可修改書本 (API: `PATCH https://fe-interview-api.unnotech.com/api/book/:bookId/`)
+- 新增書籍頁面有 名稱(title)、作者(author)、備註(description) 三個欄位，名稱與作者為必填欄位，按下新增按鈕並檢核通過後即可新增書本 (API: `POST https://fe-interview-api.unnotech.com/book/`)
+- "Book Detail Page" 會顯示 Book 的author、title 與 description (API: `GET https://fe-interview-api.unnotech.com/book/:bookId/`)
+- "Book Detail Page" 右上方有一個修改按鈕，按下按鈕後，會進到修改頁面，修改頁面 有 名稱(title)、作者(author)、備註(description) 三個欄位，名稱與作者為必填欄位，按下修改按鈕並檢核通過後即可修改書本 (API: `PATCH https://fe-interview-api.unnotech.com/book/:bookId/`)
 
 ## Wireframe
 
@@ -144,10 +144,10 @@ curl -X POST --data "author=TEST&title=New Book&description=TEST" https://fe-int
 }
 ```
 
-### Delete Book [Delete] `https://fe-interview-api.unnotech.com/api/book/`
+### Delete Book [Delete] `https://fe-interview-api.unnotech.com/book/`
 
 **Request**
 
 ```bash
-curl -X "DELETE" https://fe-interview-api.unnotech.com/api/book/2/
+curl -X "DELETE" https://fe-interview-api.unnotech.com/book/2/
 ```
