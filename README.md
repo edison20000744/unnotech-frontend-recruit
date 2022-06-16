@@ -57,12 +57,12 @@
 
 ## 我們所提供的 API
 
-### List Books [GET] `https://fe-interview-api.unnotech.com/book/`
+### List Books [GET] `https://fe-interview-api.unnotech.com/books/`
 
 **Request**
 
 ```bash
-curl -H "Accept: application/json" -H "Content-Type: application/json" -X GET https://fe-interview-api.unnotech.com/book/
+curl -H "Accept: application/json" -H "Content-Type: application/json" -X GET https://fe-interview-api.unnotech.com/books/
 ```
 
 **Response 200**
@@ -81,12 +81,12 @@ curl -H "Accept: application/json" -H "Content-Type: application/json" -X GET ht
 ]
 ```
 
-### Single Book [GET] `https://fe-interview-api.unnotech.com/book/:bookId/`
+### Single Book [GET] `https://fe-interview-api.unnotech.com/books/:bookId/`
 
 **Request**
 
 ```bash
-curl -H "Accept: application/json" -H "Content-Type: application/json" -X GET https://fe-interview-api.unnotech.com/book/1/
+curl -H "Accept: application/json" -H "Content-Type: application/json" -X GET https://fe-interview-api.unnotech.com/books/1/
 ```
 
 **Response 200**
@@ -102,12 +102,12 @@ curl -H "Accept: application/json" -H "Content-Type: application/json" -X GET ht
 }
 ```
 
-### Patch Book Detail [Patch] `https://fe-interview-api.unnotech.com/book/:bookId/`
+### Patch Book Detail [Patch] `https://fe-interview-api.unnotech.com/books/:bookId/`
 
 **Request**
 
 ```bash
-curl -X PATCH -H "Content-Type: application/json" -d '{"author": "Moroney"}' "https://fe-interview-api.unnotech.com/book/1"
+curl -X PATCH -H "Content-Type: application/json" -d '{"author": "Moroney"}' "https://fe-interview-api.unnotech.com/books/1"
 ```
 
 **Response 200**
@@ -123,12 +123,12 @@ curl -X PATCH -H "Content-Type: application/json" -d '{"author": "Moroney"}' "ht
 }
 ```
 
-### Add Book [POST] `https://fe-interview-api.unnotech.com/book/`
+### Add Book [POST] `https://fe-interview-api.unnotech.com/books/`
 
 **Request**
 
 ```bash
-curl -X POST --data "author=TEST&title=New Book&description=TEST" https://fe-interview-api.unnotech.com/book/
+curl -X POST --data "author=TEST&title=New Book&description=TEST" https://fe-interview-api.unnotech.com/books/
 ```
 
 **Response 200**
@@ -144,10 +144,10 @@ curl -X POST --data "author=TEST&title=New Book&description=TEST" https://fe-int
 }
 ```
 
-### Delete Book [Delete] `https://fe-interview-api.unnotech.com/book/`
+### Delete Book [Delete] `https://fe-interview-api.unnotech.com/books/`
 
 **Request**
 
 ```bash
-curl -X "DELETE" https://fe-interview-api.unnotech.com/book/2/
+curl -X "DELETE" https://fe-interview-api.unnotech.com/books/2/
 ```
