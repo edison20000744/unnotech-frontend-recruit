@@ -1,0 +1,16 @@
+{
+  "name": "unnotech",
+  "version": "0.0.0",
+  "description": "Unnotech Frontend Engineer 徵才小專案",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "nuxt": "3.0.0"
+  }
+}
