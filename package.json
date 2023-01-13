@@ -4,6 +4,7 @@
   "description": "Unnotech Frontend Engineer 徵才小專案",
   "private": true,
   "scripts": {
+    "setup": "yarn",
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
@@ -11,6 +12,11 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "nuxt": "3.0.0"
+    "node-sass": "latest",
+    "nuxt": "3.0.0",
+    "sass-loader": "latest"
+  },
+  "dependencies": {
+    "sass": "^1.54.4"
   }
 }
