@@ -1,13 +1,14 @@
 <template>
-  <div class="book-container">
+  <div class="container mx-auto px-4">
     <BooksHeader>
-      <h2>書本列表</h2>
+      <h2 class="font-bold text-3xl my-3">書本列表</h2>
       <template v-slot:right>
         <span @click="router.push('/books/add')">add</span>
       </template>
     </BooksHeader>
-    <div class="book-list">
+    <div class="grid grid-cols-2 gap-2">
       <BooksCard
+        class="hover:cursor-pointer"
         v-for="(item, index) in bookList"
         :key="index"
         :title="item.title"
@@ -31,15 +32,3 @@ export interface booksInfo {
   image?: string;
 }
 </script>
-<style lang="scss" scoped>
-.book-container {
-  .book-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    .book-card {
-      cursor: pointer;
-    }
-  }
-}
-</style>

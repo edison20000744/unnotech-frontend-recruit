@@ -9,11 +9,16 @@
       </div>
       <div class="description">
         <label>描述:</label>
-        <VField as="textarea" name="description" rows="15" maxlength="400"></VField>
+        <VField as="textarea" name="description" rows="15" maxlength="400" class="border border-black"></VField>
       </div>
-      <footer>
-        <button type="button" @click="resetForm()">取消</button>
-        <button class="button mt-3" :class="{ 'is-primary': formMeta.valid }" :disabled="!formMeta.valid || sending" type="submit">
+      <footer class="flex justify-evenly">
+        <button type="button" class="bg-gray-400 px-5 py-2.5 text-sm leading-5 rounded-md font-semibold text-white" @click="resetForm()">取消</button>
+        <button
+          class="bg-sky-500 hover:bg-sky-700 px-5 py-2.5 text-sm leading-5 rounded-md font-semibold text-white"
+          :class="{ 'is-primary': formMeta.valid }"
+          :disabled="!formMeta.valid || sending"
+          type="submit"
+        >
           {{ sending ? 'sending...' : editFlag ? '修改' : '新增' }}
         </button>
         <!-- <span @click="del()">刪除</span> -->
@@ -101,8 +106,4 @@ async function del() {
 </script>
 <style lang="scss" scoped>
 @import './assets/book-detail.scss';
-footer {
-  display: flex;
-  justify-content: space-evenly;
-}
 </style>

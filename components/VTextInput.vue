@@ -6,7 +6,7 @@
         <VField :name="name" v-slot="{ field, meta, errors }">
           <input
             v-bind="field"
-            class="input"
+            class="input border border-black"
             :class="{
               'is-success': meta.valid && meta.touched,
               'is-danger': !meta.valid && meta.touched,
@@ -34,7 +34,7 @@
                   </li>
                 </ul>
               </template> -->
-          <VErrorMessage :name="name" as="div" class="help is-danger" />
+          <VErrorMessage :name="name" as="div" class="help is-danger text-red-500" />
           <div class="debug" v-if="debug">
             <pre>{{ errors }}</pre>
             <pre>{{ meta }}</pre>

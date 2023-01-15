@@ -1,8 +1,8 @@
 <template>
-  <div class="book-card">
-    <div class="title">{{ title }}</div>
+  <div class="book-card flex flex-col gap-4 border p-4 hover:shadow-xl hover:shadow-cyan-500/50">
+    <div class="title text-1xl text-center font-bold text-gray-500 truncate">{{ title }}</div>
     <div class="author">作者:{{ author }}</div>
-    <div class="description">{{ description }}</div>
+    <div class="description text-blue-300">{{ description }}</div>
   </div>
 </template>
 <script setup lang="ts">
@@ -15,19 +15,6 @@ const props = defineProps<{
 
 <style lang="scss" scoped>
 .book-card {
-  border: 1px solid black;
-  min-height: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding: 10px;
-  &:hover {
-    box-shadow: 0 0 10px 1px #a1b300;
-  }
-  .title {
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-align: center;
-  }
+  min-height: 100px;
 }
 </style>

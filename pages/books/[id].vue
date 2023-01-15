@@ -4,7 +4,7 @@
       <template v-slot:left>
         <span @click="back()">back</span>
       </template>
-      <h2>{{ title }}</h2>
+      <h2 class="font-bold text-3xl my-3">{{ title }}</h2>
       <template v-slot:right>
         <span v-if="!edit" @click="edit = true">edit</span>
       </template>
