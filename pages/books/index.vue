@@ -27,11 +27,8 @@ export interface booksInfo {
   title: string;
   author: string;
   description: string;
-  id: number;
-  image: string;
-  v?: string;
-  w?: string;
-  h?: string;
+  id?: number;
+  image?: string;
 }
 </script>
 <style lang="scss" scoped>

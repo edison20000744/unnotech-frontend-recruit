@@ -9,7 +9,7 @@
         <span v-if="!edit" @click="edit = true">edit</span>
       </template>
     </BooksHeader>
-    <BooksFrom v-if="edit" :data="bookDetail" action="edit"></BooksFrom>
+    <BooksFrom v-if="edit" v-model:data="bookDetail" :edit-flag="true" @back="back()"></BooksFrom>
     <BooksDetailInfo v-else :data="bookDetail"></BooksDetailInfo>
   </div>
 </template>
