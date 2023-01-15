@@ -9,7 +9,7 @@
       </div>
       <div class="description">
         <label>描述:</label>
-        <VField as="textarea" name="description"></VField>
+        <VField as="textarea" name="description" rows="15" maxlength="400"></VField>
       </div>
       <footer>
         <button type="button" @click="resetForm()">取消</button>
@@ -100,12 +100,9 @@ async function del() {
 }
 </script>
 <style lang="scss" scoped>
-.book-detail {
+@import './assets/book-detail.scss';
+footer {
   display: flex;
-  flex-direction: column;
-  footer {
-    display: flex;
-    justify-content: space-evenly;
-  }
+  justify-content: space-evenly;
 }
 </style>

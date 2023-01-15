@@ -18,12 +18,5 @@ defineProps<{
 }>();
 </script>
 <style lang="scss" scoped>
-.book-detail {
-  display: flex;
-  flex-direction: column;
-  footer {
-    display: flex;
-    justify-content: space-evenly;
-  }
-}
+@import './assets/book-detail.scss';
 </style>

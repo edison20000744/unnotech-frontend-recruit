@@ -37,6 +37,9 @@ export interface booksInfo {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+    .book-card {
+      cursor: pointer;
+    }
   }
 }
 </style>

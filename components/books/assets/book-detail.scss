@@ -1,0 +1,11 @@
+.book-detail {
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+  .title,
+  .author,
+  .description {
+    display: flex;
+    margin-bottom: 10px;
+  }
+}
