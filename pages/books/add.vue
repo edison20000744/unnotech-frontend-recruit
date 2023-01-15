@@ -2,7 +2,9 @@
   <div class="container mx-auto px-20 min-w-full">
     <BooksHeader>
       <template v-slot:left>
-        <span @click="router.back()">back</span>
+        <span @click="router.back()">
+          <font-awesome-icon icon="fa-solid fa-chevron-left" />
+        </span>
       </template>
       <h2 class="font-bold text-3xl my-3">新增書本</h2>
     </BooksHeader>

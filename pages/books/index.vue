@@ -3,7 +3,9 @@
     <BooksHeader>
       <h2 class="font-bold text-3xl my-3">書本列表</h2>
       <template v-slot:right>
-        <span @click="router.push('/books/add')">add</span>
+        <span @click="router.push('/books/add')">
+          <font-awesome-icon icon="fa-solid fa-plus" />
+        </span>
       </template>
     </BooksHeader>
     <div class="grid grid-cols-2 gap-2">

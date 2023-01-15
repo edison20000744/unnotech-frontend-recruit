@@ -2,11 +2,15 @@
   <div v-if="bookDetail">
     <BooksHeader>
       <template v-slot:left>
-        <span @click="back()">back</span>
+        <span @click="back()">
+          <font-awesome-icon icon="fa-solid fa-chevron-left" />
+        </span>
       </template>
       <h2 class="font-bold text-3xl my-3">{{ title }}</h2>
       <template v-slot:right>
-        <span v-if="!edit" @click="edit = true">edit</span>
+        <span v-if="!edit" @click="edit = true">
+          <font-awesome-icon icon="fa-solid fa-pen-to-square" />
+        </span>
       </template>
     </BooksHeader>
     <BooksFrom v-if="edit" v-model:data="bookDetail" :edit-flag="true" @back="back()"></BooksFrom>
