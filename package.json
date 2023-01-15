@@ -12,13 +12,14 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.2.0",
     "node-sass": "latest",
     "nuxt": "3.0.0",
     "sass-loader": "latest"
   },
   "dependencies": {
-    "sass": "^1.54.4",
     "@vee-validate/rules": "^4.5.11",
+    "sass": "^1.54.4",
     "vee-validate": "^4.7.3",
     "yup": "^0.32.11"
   }
